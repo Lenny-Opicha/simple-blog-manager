@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background: #fff;
+  color: #111;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.main-container {
+  display: flex;
+  gap: 40px;
+}
+
+.sidebar {
+  width: 30%;
+  border-right: 1px solid #eee;
+  padding-right: 20px;
+}
+
+.sidebar h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.post-list div {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.post-list div:hover {
+  color: #007acc;
+}
+
+.post-detail-area {
+  width: 70%;
+}
+
+#post-detail h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+#post-detail p {
+  margin-bottom: 10px;
+}
+
+form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  width: fit-content;
+  padding: 8px 16px;
+  border: none;
+  background-color: #007acc;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}

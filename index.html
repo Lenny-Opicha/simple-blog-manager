@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Blog Manager</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>LENNYS BLOG</h1>
+    </nav>
+  </header>
+ <main class="main-container">
+    <section class="sidebar">
+      <h2>Posts</h2>
+      <div id="post-list" class="post-list"></div>
+    </section>
+  <section class="post-detail-area">
+      <div id="post-detail" class="post-detail">
+        <p>Select a post to view details</p>
+      </div>
+  <form id="new-post-form">
+        <h3>Add New Post</h3>
+        <input type="text" id="title" placeholder="Title" required />
+        <textarea id="content" placeholder="Content" required></textarea>
+        <input type="text" id="author" placeholder="Author" required />
+        <button type="submit">Add Post</button>
+      </form>
+  <form id="edit-post-form" class="hidden">
+        <h4>Edit Post</h4>
+        <input type="text" id="edit-title" placeholder="Title" required />
+        <textarea id="edit-content" placeholder="Content" required></textarea>
+        <button type="submit">Update</button>
+        <button type="button" id="cancel-edit">Cancel</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 My Blog. All rights reserved.</p>
+  </footer>
+
+  <script src="src/index.js"></script>
+</body>
+</html>
